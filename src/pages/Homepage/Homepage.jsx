@@ -1,6 +1,6 @@
 import { useSelector } from "react-redux";
 
-import { pizzas, aperitivo, bebidas } from "../../data";
+import { pizzas, aperitivo, bebidas } from "../../data/data";
 
 import CardsHome from "../../components/CardsHome/CardsHome";
 import SearchItem from "../../components/Search/Search";

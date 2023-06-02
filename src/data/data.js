@@ -2,7 +2,7 @@ export const pizzas = [
     {
         name: "Baiana",
         ingredientes: "Tomate, mussarela, calabresa-moida, pimenta-baiana, alho-frito, ovos, cebola e orégano.",
-        img: "../../src/assets/img/baiana.png",
+        img: "public/imgs/baiana.png",
         id: 1,
         itemP: {
             id: 1,
@@ -23,7 +23,7 @@ export const pizzas = [
     {
         name: "Brigadeiro",
         ingredientes: "Chocolate, morango, chocolate granulado e borda recheada de chocolate.",
-        img: "../src/assets/img/brigadeiro.png",
+        img: "/imgs/brigadeiro.png",
         id: 2,
         itemP: {
             id: 4,
@@ -44,7 +44,7 @@ export const pizzas = [
     {
         name: "Brócolis",
         ingredientes: "Tomate, mussarela, brocolis, bacon, alho-frito e orégano.",
-        img: "../src/assets/img/brocolis.png",
+        img: "/imgs/brocolis.png",
         id: 3,
         itemP: {
             id: 7,
@@ -65,7 +65,7 @@ export const pizzas = [
     {
         name: "Calabresa",
         ingredientes: "Tomate, mussarela, calabresa defumada cebola, azeitona e orégano.",
-        img: "../src/assets/img/calabresa.png",
+        img: "/imgs/calabresa.png",
         id: 4,
         itemP: {
             id: 10,
@@ -86,7 +86,7 @@ export const pizzas = [
     {
         name: "Chocolate",
         ingredientes: "Massa artesanal, mussarela, chocolate ao leite e granulado de chocolate.",
-        img: "../src/assets/img/chocolate.png",
+        img: "/imgs/chocolate.png",
         id: 5,
         itemP: {
             id: 13,
@@ -107,7 +107,7 @@ export const pizzas = [
     {
         name: "Frango com Catupiry",
         ingredientes: "Tomate, frango desfiado, catupiry, mussarela e orégano.",
-        img: "../src/assets/img/frango-com-catupiry.png",
+        img: "/imgs/frango-com-catupiry.png",
         id: 6,
         itemP: {
             id: 16,
@@ -128,7 +128,7 @@ export const pizzas = [
     {
         name: "Marguerita",
         ingredientes: "Tomate, mussarela, manjericão, parmesão, rodelas de tomate e orégano.",
-        img: "../src/assets/img/marguerita.png",
+        img: "/imgs/marguerita.png",
         id: 7,
         itemP: {
             id: 19,
@@ -149,7 +149,7 @@ export const pizzas = [
     {
         name: "Mussarela",
         ingredientes: "Massa artesanal, molho de tomate, queijo mussarela extra e orégano.",
-        img: "../src/assets/img/mussarela.png",
+        img: "/imgs/mussarela.png",
         id: 8,
         itemP: {
             id: 22,
@@ -170,7 +170,7 @@ export const pizzas = [
     {
         name: "Napolita",
         ingredientes: "Tomate, mussarela, parmesão, rodelas de tomate, cebola e orégano.",
-        img: "../src/assets/img/napolitana.png",
+        img: "/imgs/napolitana.png",
         id: 9,
         itemP: {
             id: 25,
@@ -191,7 +191,7 @@ export const pizzas = [
     {
         name: "Portuguesa",
         ingredientes: "Tomate, presuntado, ervilha, ovos, palmito, azeitonas, cebola, mussarela e orégano.",
-        img: "../src/assets/img/portuguesa.png",
+        img: "/imgs/portuguesa.png",
         id: 10,
         itemP: {
             id: 28,
@@ -212,7 +212,7 @@ export const pizzas = [
     {
         name: "Romeu e Julieta",
         ingredientes: "Massa artesanal, mussarela, parmesão, orégano e goiabada.",
-        img: "../src/assets/img/romeu-julieta.png",
+        img: "/imgs/romeu-julieta.png",
         id: 11,
         itemP: {
             id: 31,
@@ -233,7 +233,7 @@ export const pizzas = [
     {
         name: "Toscana",
         ingredientes: "Tomate, mussarela, calabresa-moida, manjericão e orégano.",
-        img: "../src/assets/img/toscana.png",
+        img: "/imgs/toscana.png",
         id: 12,
         itemP: {
             id: 34,

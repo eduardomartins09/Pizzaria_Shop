@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 
 import { addToCart } from "../../store/cartSlice";
 
-import { pizzas } from "../../data";
+import { pizzas } from "../../data/data";
 
 import { AiOutlineShoppingCart } from "react-icons/ai";
  
