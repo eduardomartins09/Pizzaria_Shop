@@ -2,7 +2,7 @@ export const pizzas = [
     {
         name: "Baiana",
         ingredientes: "Tomate, mussarela, calabresa-moida, pimenta-baiana, alho-frito, ovos, cebola e orégano.",
-        img: "src/assets/img/baiana.png",
+        img: "../../src/assets/img/baiana.png",
         id: 1,
         itemP: {
             id: 1,
@@ -23,7 +23,7 @@ export const pizzas = [
     {
         name: "Brigadeiro",
         ingredientes: "Chocolate, morango, chocolate granulado e borda recheada de chocolate.",
-        img: "src/assets/img/brigadeiro.png",
+        img: "../src/assets/img/brigadeiro.png",
         id: 2,
         itemP: {
             id: 4,
@@ -44,7 +44,7 @@ export const pizzas = [
     {
         name: "Brócolis",
         ingredientes: "Tomate, mussarela, brocolis, bacon, alho-frito e orégano.",
-        img: "src/assets/img/brocolis.png",
+        img: "../src/assets/img/brocolis.png",
         id: 3,
         itemP: {
             id: 7,
@@ -65,7 +65,7 @@ export const pizzas = [
     {
         name: "Calabresa",
         ingredientes: "Tomate, mussarela, calabresa defumada cebola, azeitona e orégano.",
-        img: "src/assets/img/calabresa.png",
+        img: "../src/assets/img/calabresa.png",
         id: 4,
         itemP: {
             id: 10,
@@ -86,7 +86,7 @@ export const pizzas = [
     {
         name: "Chocolate",
         ingredientes: "Massa artesanal, mussarela, chocolate ao leite e granulado de chocolate.",
-        img: "src/assets/img/chocolate.png",
+        img: "../src/assets/img/chocolate.png",
         id: 5,
         itemP: {
             id: 13,
@@ -107,7 +107,7 @@ export const pizzas = [
     {
         name: "Frango com Catupiry",
         ingredientes: "Tomate, frango desfiado, catupiry, mussarela e orégano.",
-        img: "src/assets/img/frango-com-catupiry.png",
+        img: "../src/assets/img/frango-com-catupiry.png",
         id: 6,
         itemP: {
             id: 16,
@@ -128,7 +128,7 @@ export const pizzas = [
     {
         name: "Marguerita",
         ingredientes: "Tomate, mussarela, manjericão, parmesão, rodelas de tomate e orégano.",
-        img: "src/assets/img/marguerita.png",
+        img: "../src/assets/img/marguerita.png",
         id: 7,
         itemP: {
             id: 19,
@@ -149,7 +149,7 @@ export const pizzas = [
     {
         name: "Mussarela",
         ingredientes: "Massa artesanal, molho de tomate, queijo mussarela extra e orégano.",
-        img: "src/assets/img/mussarela.png",
+        img: "../src/assets/img/mussarela.png",
         id: 8,
         itemP: {
             id: 22,
@@ -170,7 +170,7 @@ export const pizzas = [
     {
         name: "Napolita",
         ingredientes: "Tomate, mussarela, parmesão, rodelas de tomate, cebola e orégano.",
-        img: "src/assets/img/napolitana.png",
+        img: "../src/assets/img/napolitana.png",
         id: 9,
         itemP: {
             id: 25,
@@ -191,7 +191,7 @@ export const pizzas = [
     {
         name: "Portuguesa",
         ingredientes: "Tomate, presuntado, ervilha, ovos, palmito, azeitonas, cebola, mussarela e orégano.",
-        img: "src/assets/img/portuguesa.png",
+        img: "../src/assets/img/portuguesa.png",
         id: 10,
         itemP: {
             id: 28,
@@ -212,7 +212,7 @@ export const pizzas = [
     {
         name: "Romeu e Julieta",
         ingredientes: "Massa artesanal, mussarela, parmesão, orégano e goiabada.",
-        img: "src/assets/img/romeu-julieta.png",
+        img: "../src/assets/img/romeu-julieta.png",
         id: 11,
         itemP: {
             id: 31,
@@ -233,7 +233,7 @@ export const pizzas = [
     {
         name: "Toscana",
         ingredientes: "Tomate, mussarela, calabresa-moida, manjericão e orégano.",
-        img: "src/assets/img/toscana.png",
+        img: "../src/assets/img/toscana.png",
         id: 12,
         itemP: {
             id: 34,
@@ -257,7 +257,7 @@ export const aperitivo = [
     {
         name: "Batata Frita",
         ingredientes: "Acompanha pacote de sal e, saches de ketchup e maionese",
-        img: "src/assets/imgAperitivos/batata-frita.png",
+        img: "../src/assets/imgAperitivos/batata-frita.png",
         itemP: {
             id: 37,
             text: "Porção Pequena",
@@ -277,7 +277,7 @@ export const aperitivo = [
     {
         name: "Pastelzinho",
         ingredientes: "Temos com recheio de queijo, carne e frango com catupiry",
-        img: "src/assets/imgAperitivos/pastelzinho.png",
+        img: "../src/assets/imgAperitivos/pastelzinho.png",
         itemP: {
             id: 40,
             text: "Porção Pequena",
@@ -297,7 +297,7 @@ export const aperitivo = [
     {
         name: "Mini Pizza",
         ingredientes: "Temos com recheio de portuguesa, calabresa e frango",
-        img: "src/assets/imgAperitivos/mini-pizza.png",
+        img: "../src/assets/imgAperitivos/mini-pizza.png",
         itemP: {
             id: 43,
             text: "Tamanho Pequeno",
@@ -317,7 +317,7 @@ export const aperitivo = [
     {
         name: "Mousses",
         ingredientes: "No momento temos apenas mousse de chocolate, maracujá e limão",
-        img: "src/assets/imgAperitivos/mousses.png",
+        img: "../src/assets/imgAperitivos/mousses.png",
         itemP: {
             id: 46,
             text: "Porção Pequeno",
@@ -340,7 +340,7 @@ export const bebidas = [
     {
         name: "Refrigerante",
         ingredientes: "Temos Coca, Guarana, Guarana Jesus e Fanta",
-        img: "src/assets/imgBebidas/refrigerante.png",
+        img: "../src/assets/imgBebidas/refrigerante.png",
         itemP: {
             id: 49,
             text: "Lata 350ml",
@@ -360,7 +360,7 @@ export const bebidas = [
     {
         name: "Suco",
         ingredientes: "Temos suco de laranja, limão, morango e maracujá",
-        img: "src/assets/imgBebidas/suco-copo.webp",
+        img: "../src/assets/imgBebidas/suco-copo.webp",
         itemP: {
             id: 52,
             text: "Copo 250ml",
@@ -381,7 +381,7 @@ export const bebidas = [
     {
         name: "Cerveja Lata",
         ingredientes: "Marcas no estoque: Petra, Itaipava e Heineken",
-        img: "src/assets/imgBebidas/cerveja-lata.png",
+        img: "../src/assets/imgBebidas/cerveja-lata.png",
         itemP: {
             id: 55,
             text: "Lata 350ml",
@@ -396,7 +396,7 @@ export const bebidas = [
     {
         name: "Agua",
         ingredientes: "Temos agua sem gás cristal e lençois maranhenses",
-        img: "src/assets/imgBebidas/agua.png",
+        img: "../src/assets/imgBebidas/agua.png",
         itemM: {
             id: 57,
             text: "Garafa 500ml",
