@@ -2,7 +2,7 @@ export const pizzas = [
     {
         name: "Baiana",
         ingredientes: "Tomate, mussarela, calabresa-moida, pimenta-baiana, alho-frito, ovos, cebola e orégano.",
-        img: "public/imgs/baiana.png",
+        img: "/imgs/baiana.png",
         id: 1,
         itemP: {
             id: 1,
@@ -257,7 +257,7 @@ export const aperitivo = [
     {
         name: "Batata Frita",
         ingredientes: "Acompanha pacote de sal e, saches de ketchup e maionese",
-        img: "../src/assets/imgAperitivos/batata-frita.png",
+        img: "/imgAperitivos/batata-frita.png",
         itemP: {
             id: 37,
             text: "Porção Pequena",
@@ -273,11 +273,11 @@ export const aperitivo = [
             text: "Porção Grande",
             preco: 8.50,
         },
-    },
+    }, 
     {
         name: "Pastelzinho",
         ingredientes: "Temos com recheio de queijo, carne e frango com catupiry",
-        img: "../src/assets/imgAperitivos/pastelzinho.png",
+        img: "/imgAperitivos/pastelzinho.png",
         itemP: {
             id: 40,
             text: "Porção Pequena",
@@ -297,7 +297,7 @@ export const aperitivo = [
     {
         name: "Mini Pizza",
         ingredientes: "Temos com recheio de portuguesa, calabresa e frango",
-        img: "../src/assets/imgAperitivos/mini-pizza.png",
+        img: "/imgAperitivos/mini-pizza.png",
         itemP: {
             id: 43,
             text: "Tamanho Pequeno",
@@ -317,7 +317,7 @@ export const aperitivo = [
     {
         name: "Mousses",
         ingredientes: "No momento temos apenas mousse de chocolate, maracujá e limão",
-        img: "../src/assets/imgAperitivos/mousses.png",
+        img: "/imgAperitivos/mousses.png",
         itemP: {
             id: 46,
             text: "Porção Pequeno",
@@ -340,7 +340,7 @@ export const bebidas = [
     {
         name: "Refrigerante",
         ingredientes: "Temos Coca, Guarana, Guarana Jesus e Fanta",
-        img: "../src/assets/imgBebidas/refrigerante.png",
+        img: "/imgBebidas/refrigerante.png",
         itemP: {
             id: 49,
             text: "Lata 350ml",
@@ -360,7 +360,7 @@ export const bebidas = [
     {
         name: "Suco",
         ingredientes: "Temos suco de laranja, limão, morango e maracujá",
-        img: "../src/assets/imgBebidas/suco-copo.webp",
+        img: "/imgBebidas/suco-copo.webp",
         itemP: {
             id: 52,
             text: "Copo 250ml",
@@ -381,7 +381,7 @@ export const bebidas = [
     {
         name: "Cerveja Lata",
         ingredientes: "Marcas no estoque: Petra, Itaipava e Heineken",
-        img: "../src/assets/imgBebidas/cerveja-lata.png",
+        img: "/imgBebidas/cerveja-lata.png",
         itemP: {
             id: 55,
             text: "Lata 350ml",
@@ -392,18 +392,28 @@ export const bebidas = [
             text: "Lata 500ml",
             preco: 7.50,
         },
+        itemG: {
+            id: 57,
+            text: "Lata 750ml",
+            preco: 7.00,
+        },
     },
     {
         name: "Agua",
         ingredientes: "Temos agua sem gás cristal e lençois maranhenses",
-        img: "../src/assets/imgBebidas/agua.png",
+        img: "/imgBebidas/agua.png",
+        itemP: {
+            id: 58,
+            text: "Garafa 250ml",
+            preco: 3.00,
+        },
         itemM: {
-            id: 57,
+            id: 59,
             text: "Garafa 500ml",
             preco: 3.50,
         },
         itemG: {
-            id: 58,
+            id: 60,
             text: "Garafa 750ml",
             preco: 5.50,
         },

@@ -109,6 +109,7 @@ const ProductDetails = () => {
 
     dispatch(addToCart(tempItem))
     navigate("/cart")
+    scrollTo(top)
   }
 
   return (   
@@ -131,7 +132,7 @@ const ProductDetails = () => {
               <div className="mt-2 mb-10 flex flex-wrap gap-2">
                 <form>
                   <h2 className="mr-4 text-xl">Escolha o tamanho desejado</h2>
-                  <div className="flex flex-col gap-2 mt-2">
+                  <div className="flex flex-col gap-2 mt-2">                  
                     <div>
                       <input
                         id="P"
@@ -148,7 +149,7 @@ const ProductDetails = () => {
                       >
                         {`${item.itemP.text + " - R$ " + item.itemP.preco.toFixed(2)}`}
                       </label>
-                    </div>                             
+                    </div>
                     <div>
                       <input
                         id="M"
@@ -164,7 +165,7 @@ const ProductDetails = () => {
                       >
                         {`${item.itemM.text + " - R$ " + item.itemM.preco.toFixed(2)}`}
                       </label>
-                    </div>                             
+                    </div>   
                     <div>
                       <input
                         id="G"
@@ -180,7 +181,7 @@ const ProductDetails = () => {
                       >
                         {`${item.itemG.text + " - R$ " + item.itemG.preco.toFixed(2)}`}
                       </label>
-                    </div>                             
+                    </div>                                                        
                   </div>          
                 </form>
                 {item.itemM.preco > 30 && (
@@ -233,22 +234,24 @@ const ProductDetails = () => {
               >
                 Voltar
               </button>
-              {item.itemM.preco > 30 && (
-                <button 
-                  className="bg-white text-black rounded-md px-3 py-4 font-bold text-2xl uppercase mt-2 ml-4 hover:bg-gray-500" 
-                  onClick={openAndClose}
-                >
-                  Avançar
-                </button>
-              )}
-              {item.itemM.preco < 30 && (               
-                <button 
-                  className="bg-white text-black rounded-md px-3 py-4 font-bold text-2xl uppercase mt-2 ml-4 hover:bg-gray-500" 
-                  onClick={() => goToTheCart(item)}
-                >                  
-                  Add Cart
-                </button>             
-              )}
+              {item.itemM.preco > 30 
+                ? (
+                  <button 
+                    className="bg-white text-black rounded-md px-3 py-4 font-bold text-2xl uppercase mt-2 ml-4 hover:bg-gray-500" 
+                    onClick={openAndClose}
+                  >
+                    Avançar
+                  </button>
+                )
+                : (
+                  <button 
+                    className="bg-white text-black rounded-md px-3 py-4 font-bold text-2xl uppercase mt-2 ml-4 hover:bg-gray-500" 
+                    onClick={() => goToTheCart(item)}
+                  >                  
+                    Add Cart
+                  </button> 
+                )
+              }
             </>
           )}
           {openTamanhoAndBorda2 && item.itemM.preco > 30 && (

@@ -1,6 +1,6 @@
 import { BsFacebook, BsInstagram, BsTwitter, BsPinterest } from "react-icons/bs";
 import { MdRoom } from "react-icons/md";
-import { AiFillPhone } from "react-icons/ai";
+import { AiFillPhone, AiOutlineClockCircle } from "react-icons/ai";
   
 import logo  from "../../assets/logo.webp";
   
@@ -36,7 +36,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="grow-[2] p-6 flex flex-col flex-wrap items-center sm:block">
-          <h4 className="mb-5">Contact</h4>
+          <h4 className="mb-5">Contato</h4>
           <div className="flex flex-wrap gap-2 mb-4">
             <div className="w-[40px] h-[40px] rounded-full flex items-center justify-center mr-2 text-2xl bg-background-facebook">
               <BsFacebook />
@@ -54,6 +54,10 @@ const Footer = () => {
           <div className="flex mb-4">
             <MdRoom className="text-3xl mr-2" /> 
             Conjunto Planalto Pingão, 3, Aurora - São Luís, MA, 65060-555
+          </div>
+          <div className="flex mb-4">
+            <AiOutlineClockCircle className="text-3xl mr-2" />             
+            Horario de Funcionamento: De Segunda a Domingos das 16:00 as 22:59
           </div>
           <div className="flex mb-4">
             <AiFillPhone className="text-2xl mr-2"  /> 

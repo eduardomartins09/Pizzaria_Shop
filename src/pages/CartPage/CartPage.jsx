@@ -24,27 +24,25 @@ const CartPage = () => {
   
   }, [useSelector((state) => state.cart)])
 
+  //onClick={() => navigate("/")}
+
   return (
     <section>
-      <div className="flex items-center bg-background-white text-color-gray gap-2 px-8 py-2">
-        <div className="flex items-center justify-center gap-2">                  
-          <span>
-            <AiOutlineHome 
-              size={30} 
-              onClick={() => navigate("/")} 
-              className="cursor-pointer"
-            />
-          </span>
-          <span className="text-6xl">
-            -  
-          </span>
-        </div>
-        <div className="flex items-center justify-center">
-          <span className="uppercase text-2xl font-bold">
-            Cart
-          </span>
-        </div>
-      </div>
+      <div className="flex items-end bg-background-white text-color-gray gap-2 px-8 py-2">
+        <span className="">
+          <AiOutlineHome 
+            size={40}
+            className="cursor-pointer" 
+            onClick={() => navigate("/")} 
+          />              
+        </span>
+        <span className="font-bold text-2xl">
+          -
+        </span>
+        <span className="font-bold text-2xl">
+          Home
+        </span>   
+      </div>    
       <div className="p-4 bg-background-cart">
         <div className="mr-8 w-full md:flex md:justify-between">
           <div className="rounded-2xl p-5 w-full md:w-1/2">
@@ -117,7 +115,7 @@ const CartPage = () => {
                       <BsTrash  size={20} />
                     </span>
                     <span>
-                      Remove
+                      Remover
                     </span>
                   </button>              
                 </div>
@@ -127,29 +125,29 @@ const CartPage = () => {
               <button className="rounded-md px-2 py-2 font-bold text-sm uppercase mt-4 bg-red-600 hover:bg-background-black hover:text-white" 
                 onClick={() => dispatch(clearCart())}
               >
-                Clear Cart
+                Limpar Carrinho
               </button>
             </div>
           </div>
           <div className="bg-background-white h-fit p-6 mt-8 rounded-xl">
             <h2 className="text-2xl font-bold">
-              Order Sumarry
+              Resumo do Pedido
             </h2> 
             <div className="w-full h-[2px] my-2 bg-black"></div>         
             <div>
               <h2 className="font-bold text-sm">
-                Selected {totalItems} items. Price <span>{formatPrice(totalAmount)}</span>
+              {totalItems} Items Adicionados. Preço <span>{formatPrice(totalAmount)}</span>
               </h2>
             </div>
             <div>
               <h2 className="font-bold text-sm">
-                Delivery Cost <span>{formatPrice(deliveryCharge)}</span>
+                Taxa de Entrega <span>{formatPrice(deliveryCharge)}</span>
               </h2>
             </div>
             <div className="w-full h-[3px] my-2 bg-black"></div>
             <div>
               <h2 className="text-xl font-bold">
-                Grand Total: {formatPrice(totalAmount + deliveryCharge)}
+                Total: {formatPrice(totalAmount + deliveryCharge)}
               </h2>
               <button className="bg-orange-600 w-full rounded-sm px-2 py-2 font-bold text-sm uppercase mt-2 hover:bg-gray-500">
                 Ir para forma de pagamento

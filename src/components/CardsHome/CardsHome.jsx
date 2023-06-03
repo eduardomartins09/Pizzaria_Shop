@@ -7,8 +7,9 @@ const CardsHome = ({ item }) => {
   const dispatch = useDispatch()
   const navigate = useNavigate()
 
-  const viewModalHandler = (data) => {
+  const goToProductDetails = (data) => {
     dispatch(setModalData(data))
+    scrollTo(top)
     navigate("/productDetails")
   }
 
@@ -16,7 +17,7 @@ const CardsHome = ({ item }) => {
 
   return (
     <>
-      <div className="grid grid-cols-1 items-center justify-between p-4 text-white shadow-2xl" key={item.id}>
+      <div className="grid grid-cols-1 items-end justify-between p-4 text-white shadow-2xl" key={item.id}>
         <div className="flex items-center h-[180px]">
           <img
             src={item.img}
@@ -67,7 +68,7 @@ const CardsHome = ({ item }) => {
           <div className="mt-4">
             <button 
               className="p-2 font-semibold rounded-md cursor-pointer bg-orange-500 w-full hover:bg-white hover:text-black"
-              onClick={() => viewModalHandler(item)}
+              onClick={() => goToProductDetails(item)}
             >
               Adicionar ao Carrinho
             </button>
