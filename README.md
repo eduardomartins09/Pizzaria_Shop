@@ -5,7 +5,7 @@
 Link de produção: https://pizzaria-shop.netlify.app/
 <br />
 <br />
-O projeto Pizzaria Shop foi feito com ReactJs + Redux.
+O projeto Pizzaria Shop foi feito com ReactJs + Redux + Tailwind.
 
 Ao acessar o site será mostrado ao usuário diversas opções de pizzas com diferentes tamanhos, sabores e valores. Logo abaixo das pizzas o usuário também tem duas categorias de produtos que são os aperitivos e as bebidas que podem ser adicionados ao carrinho. O usuário também poderá pesquisar o produto de sua preferência através da barra de pesquisa logo abaixo do nav.
 
@@ -19,6 +19,7 @@ Ao finalizar a escolha do produto, o usuário será direcionado a página do car
 - Reduxjs/Toolkit
 - React-Router-Dom
 - React-Icons
+- Tailwind
 
 ### Ilustrações: 
 ![pizzariaHome](https://github.com/eduardomartins09/Pizzaria_Shop/assets/102693577/a1b8485c-8c44-47a3-9f10-316b903d77e3)
