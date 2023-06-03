@@ -20,11 +20,8 @@ const CartPage = () => {
   const dispatch = useDispatch()
 
   useEffect(() => {
-    dispatch(getCartTotal())
-  
+    dispatch(getCartTotal()) 
   }, [useSelector((state) => state.cart)])
-
-  //onClick={() => navigate("/")}
 
   return (
     <section>
@@ -108,7 +105,7 @@ const CartPage = () => {
                   <h4 className="text-xl font-bold mt-4">
                     SubTotal: {formatPrice(item.totalPrice)}
                   </h4>                  
-                  <button className="flex items-center gap-1 rounded-md px-2 py-2 font-bold text-sm uppercase mt-4 bg-red-600 hover:bg-background-black hover:text-white" 
+                  <button className="flex items-center gap-1 rounded-md px-2 py-2 font-bold text-sm uppercase mt-4 mx-auto sm:mx-0 bg-red-600 hover:bg-background-black hover:text-white" 
                     onClick={() => dispatch(removeFromCart(item.id))}
                   >
                     <span>
@@ -121,13 +118,15 @@ const CartPage = () => {
                 </div>
               </div>
             ))}
-            <div>
-              <button className="rounded-md px-2 py-2 font-bold text-sm uppercase mt-4 bg-red-600 hover:bg-background-black hover:text-white" 
-                onClick={() => dispatch(clearCart())}
-              >
-                Limpar Carrinho
-              </button>
-            </div>
+            {cartProducts.length !== 0 && (
+              <div>
+                <button className="rounded-md px-2 py-2 font-bold text-sm uppercase mt-4 bg-red-600 hover:bg-background-black hover:text-white" 
+                  onClick={() => dispatch(clearCart())}
+                >
+                  Limpar Carrinho
+                </button>
+              </div>
+            )}
           </div>
           <div className="bg-background-white h-fit p-6 mt-8 rounded-xl">
             <h2 className="text-2xl font-bold">
