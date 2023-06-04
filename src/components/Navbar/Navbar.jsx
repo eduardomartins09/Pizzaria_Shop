@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
-import { formatPrice } from "../../helper/util"; 
+import { formatPrice, goToTheTop } from "../../helper/util"; 
 
 import logo from "../../assets/logo.webp";
 
@@ -26,7 +26,7 @@ const Navbar = () => {
                 className="object-cover w-16 rounded-full mr-2 cursor-pointer"
                 src={logo} 
                 alt="logo-pizzaria" 
-                onClick={() => navigate("/")}
+                onClick={() => {navigate("/"), goToTheTop()}}
               />
               <div className="block">
                 <RxDividerVertical size={50} />

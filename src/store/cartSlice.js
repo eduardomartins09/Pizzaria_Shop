@@ -1,4 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
+import { goToTheTop } from "../helper/util";
 
 const fetchFromLocalStorage = () => {
     let cart = localStorage.getItem('cart');
@@ -72,6 +73,7 @@ const cartSlice = createSlice({
         clearCart(state){
             state.data = [];
             storeInLocalStorage(state.data);
+            goToTheTop()
         },
         getCartTotal(state){
             state.totalAmount = state.data.reduce((cartTotal, cartItem) => {

@@ -6,7 +6,8 @@ import { clearCart, getCartTotal, removeFromCart, toggleCartQty } from "../../st
 
 import { AiOutlineHome, AiOutlineMinus, AiOutlinePlus } from 'react-icons/ai'
 import { BsTrash } from 'react-icons/bs'
-import { formatPrice } from "../../helper/util";
+
+import { formatPrice, goToTheTop } from "../../helper/util";
 
 const CartPage = () => {
   const {
@@ -30,7 +31,7 @@ const CartPage = () => {
           <AiOutlineHome 
             size={40}
             className="cursor-pointer" 
-            onClick={() => navigate("/")} 
+            onClick={() => {navigate("/"), goToTheTop()}} 
           />              
         </span>
         <span className="font-bold text-2xl">

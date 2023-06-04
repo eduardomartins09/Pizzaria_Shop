@@ -2,6 +2,7 @@ import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 
 import { setModalData } from "../../store/modalSlice";
+import { goToTheTop } from "../../helper/util";
 
 const CardsHome = ({ item }) => {
   const dispatch = useDispatch()
@@ -9,8 +10,8 @@ const CardsHome = ({ item }) => {
 
   const goToProductDetails = (data) => {
     dispatch(setModalData(data))
-    scrollTo(top)
     navigate("/productDetails")
+    goToTheTop()
   }
 
   const text = "*Refrigerante não incluso"

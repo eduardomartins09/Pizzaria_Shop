@@ -4,3 +4,7 @@ export const formatPrice = (price) => {
       currency: "BRL",
     }).format(price / 1);
 };
+
+export const goToTheTop = () => {
+  scrollTo({ top: 0, left: 0, behavior: 'smooth' })
+}

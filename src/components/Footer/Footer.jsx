@@ -66,7 +66,7 @@ const Footer = () => {
           <img 
             src="https://i.ibb.co/Qfvn4z6/payment.png" 
             alt="payment-options-img" 
-            className="w-[80%]"
+            className="w-fit"
           />
         </div>
       </footer>

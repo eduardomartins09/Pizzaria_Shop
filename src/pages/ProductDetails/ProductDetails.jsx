@@ -7,6 +7,8 @@ import { addToCart } from "../../store/cartSlice";
 import { pizzas } from "../../data/data";
 
 import { AiOutlineShoppingCart } from "react-icons/ai";
+
+import { goToTheTop } from "../../helper/util";
  
 const ProductDetails = () => {
   const [openTamanhoAndBorda, setOpenTamanhoAndBorda] = useState(true)
@@ -29,6 +31,7 @@ const ProductDetails = () => {
   const openAndClose = () => {
     setOpenTamanhoAndBorda(false)
     setOpenTamanhoAndBorda2(true)
+    goToTheTop()
   }
 
   const pegarBorda = (e) => {
@@ -109,7 +112,7 @@ const ProductDetails = () => {
 
     dispatch(addToCart(tempItem))
     navigate("/cart")
-    scrollTo(top)
+    goToTheTop()
   }
 
   return (   
@@ -306,7 +309,7 @@ const ProductDetails = () => {
                 </div>
               </div>
               <button
-                className="bg-white flex items-center justify-center gap-4 text-black rounded-md px-3 py-4 w-full font-bold text-2xl uppercase mt-2 ml-4 hover:bg-orange-600"
+                className="bg-white flex items-center justify-center gap-4 text-black rounded-md px-3 py-4 w-full font-bold text-2xl uppercase mt-2 hover:bg-orange-600"
                 onClick={() => goToTheCart(item)}
               >
                 <span>
